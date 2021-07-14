@@ -26,13 +26,11 @@ body {
   justify-content: center;
 }
 
-.banner-area .banner-content {
+.banner-area .banner-content,
+.highlights-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-}
-
-.banner-area .banner-content .banner-text {
 }
 
 .banner-area .banner-content .banner-text h1 {
@@ -45,7 +43,7 @@ body {
   margin-bottom: 27px;
 }
 
-.banner-area .banner-content .banner-text .btn {
+.btn {
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
@@ -56,15 +54,25 @@ body {
   border: 1px solid #e02c6d;
   padding: 10px 24px;
   background-color: #e02c6d;
+  transition: color 0.4s linear;
 }
 
-.banner-area .banner-content .banner-text .btn .fa-arrow-right {
+.btn:hover{
+  color: #0a0826;
+}
+
+.btn .fa-arrow-right {
   margin-left: 8px;
 }
 
 .banner-area .banner-content .banner-img img {
   width: 556px;
   height: 456px;
+  transition: transform 1s ease-in-out 0.2s ;
+}
+
+.banner-area .banner-content .banner-img:hover img {
+  transform: rotate(15deg);
 }
 
 /* Players CSS */
@@ -89,15 +97,31 @@ body {
   height: 474px;
   padding: 15px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+
+}
+
+.img-box{
+  width: 300px;
+  height: 256px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 
 .players .players-box .single-player img {
   width: 100%;
-  margin-bottom: 16px;
+  transition: transform 1s ease-in-out;
+}
+
+.players .players-box .single-player .img-box:hover img{
+  transform: scale(1.2);
+
 }
 
 .players .players-box .single-player .player-info {
+  margin-top: 16px;
 }
+
 
 .players .players-box .single-player .player-info .player-name {
   font-weight: 700;
@@ -112,4 +136,179 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #6c6c6c;
+}
+
+/* Highlights CSS */
+
+.highlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 95px 0;
+}
+
+.highlights-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #0a0826;
+}
+
+.highlights-text p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-right: 162px;
+}
+
+.highlights-img img {
+  width: 100%;
+}
+
+/* News CSS */
+
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.news h2 {
+  font-size: 32px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.news .latest-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  column-gap: 35px;
+  row-gap: 35px;
+}
+
+.news .latest-news .single-news {
+  display: flex;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgb(0 0 0 / 20%);
+}
+
+.news .latest-news .single-news img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.news-details {
+  margin-left: 15px;
+}
+
+.news-details p {
+  color: #979797;
+}
+
+.news-details .news-title {
+  color: #0a0826;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+/* Partners CSS */
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.partners h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.brand {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+}
+
+.brand a{
+  text-decoration: none;
+}
+
+.brand a img{
+  width: 100%;
+}
+
+/* Footer CSS  */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 63px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.footer-content img {
+  width: 483px;
+  height: 110px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+  text-align: center;
+}
+
+.social-icon li {
+  list-style: none;
+  margin: 0 14px;
+}
+
+.social-icon li:hover i{
+  transform: scale(1.2);
+}
+
+.social-icon li a {
+  text-decoration: none;
+}
+
+.social-icon li a i {
+  font-size: 17px;
+  color: #969bab;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  background: rgba(11, 13, 23, 0.1);
+  transition: transform 0.4s ease-in-out 0.2s;
+  overflow: hidden;
+}
+
+.footer-content p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: capitalize;
+  margin: 20px 0;
 }
