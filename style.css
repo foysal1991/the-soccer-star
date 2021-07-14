@@ -57,7 +57,7 @@ body {
   transition: color 0.4s linear;
 }
 
-.btn:hover{
+.btn:hover {
   color: #0a0826;
 }
 
@@ -68,7 +68,7 @@ body {
 .banner-area .banner-content .banner-img img {
   width: 556px;
   height: 456px;
-  transition: transform 1s ease-in-out 0.2s ;
+  transition: transform 1s ease-in-out 0.2s;
 }
 
 .banner-area .banner-content .banner-img:hover img {
@@ -98,10 +98,9 @@ body {
   padding: 15px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-
 }
 
-.img-box{
+.img-box {
   width: 300px;
   height: 256px;
   overflow: hidden;
@@ -113,15 +112,13 @@ body {
   transition: transform 1s ease-in-out;
 }
 
-.players .players-box .single-player .img-box:hover img{
+.players .players-box .single-player .img-box:hover img {
   transform: scale(1.2);
-
 }
 
 .players .players-box .single-player .player-info {
   margin-top: 16px;
 }
-
 
 .players .players-box .single-player .player-info .player-name {
   font-weight: 700;
@@ -245,11 +242,11 @@ body {
   place-items: center;
 }
 
-.brand a{
+.brand a {
   text-decoration: none;
 }
 
-.brand a img{
+.brand a img {
   width: 100%;
 }
 
@@ -285,7 +282,7 @@ footer {
   margin: 0 14px;
 }
 
-.social-icon li:hover i{
+.social-icon li:hover i {
   transform: scale(1.2);
 }
 
